@@ -8,14 +8,14 @@ module.exports = {
     inline: true,
     port: 3333
   },
-  moduel: {
+  module: {
     loaders: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: 'babel',
         query: {
-          presets: ['es2015']
+          presets: ['es2015','react']
         }
       }
     ]
